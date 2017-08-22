@@ -1,4 +1,5 @@
 # AWS
+source ~/aws_creds
 export ec2_vpc_subnet='subnet-f1ff29aa'
 
 # Master instances
