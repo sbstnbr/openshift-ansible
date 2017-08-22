@@ -181,7 +181,7 @@
   command: "ssh -o StrictHostKeyChecking=no -o PasswordAuthentication=no -o ConnectTimeout=10 -o UserKnownHostsFile=/dev/null {{ hostvars[item.0].ansible_ssh_user }}@{{ item.1.dns_name }} echo {{ hostvars[item.0].ansible_ssh_user }} user is setup"
   register: result
   until: result.rc == 0
-  retries: 20
+  retries: 50
   delay: 10
   with_together:
   - "{{ instances }}"
