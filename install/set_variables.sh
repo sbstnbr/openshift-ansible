@@ -1,6 +1,4 @@
 # AWS
-export AWS_ACCESS_KEY_ID='AKIAIAZ5BHNDQ5T2A7UQ'
-export AWS_SECRET_ACCESS_KEY='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'
 export ec2_vpc_subnet='subnet-f1ff29aa'
 
 # Master instances
