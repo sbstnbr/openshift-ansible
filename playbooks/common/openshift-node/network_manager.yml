@@ -26,3 +26,8 @@
       name: 'NetworkManager'
       state: started
       enabled: yes
+
+  - name: dbus needs a restart after this or NetworkManager and firewall-cmd choke
+    service:
+      name: 'dbus'
+      state: restarted
