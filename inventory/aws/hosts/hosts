@@ -8,10 +8,10 @@ nodes
 # Set variables common for all OSEv3 hosts
 [OSEv3:vars]
 # SSH user, this user should allow ssh based auth without requiring a password
-ansible_ssh_user=root
+ansible_ssh_user=centos
 
 # If ansible_ssh_user is not root, ansible_become must be set to true
-#ansible_become=true
+ansible_become=true
 
 openshift_deployment_type=origin
 

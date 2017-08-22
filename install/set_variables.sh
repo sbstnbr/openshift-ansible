@@ -17,7 +17,7 @@ export ec2_etcd_instance_type='m4.large'
 #If needed, these values can be changed by setting environment variables on your system.
 export ec2_image='ami-0d063c6b' #Centos7
 export ec2_region='eu-west-1'
-export ec2_keypair='ls-openshift'
+export ec2_keypair='ls-openshift-key'
 export ec2_security_groups="['public']"
 export ec2_assign_public_ip='true'
 export os_etcd_root_vol_size='20'
