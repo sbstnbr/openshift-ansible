@@ -20,16 +20,16 @@ openshift_deployment_type=origin
 
 # host group for masters
 [masters]
-master.example.com
+master.ls-openshift.com
 
 # host group for etcd
 [etcd]
-master.example.com
+master.ls-openshift.com
 
 # host group for nodes, includes region info
 [nodes]
-master.example.com
-node1.example.com openshift_node_labels="{'region': 'primary', 'zone': 'east'}"
-node2.example.com openshift_node_labels="{'region': 'primary', 'zone': 'west'}"
-infra-node1.example.com openshift_node_labels="{'region': 'infra', 'zone': 'default'}"
-infra-node2.example.com openshift_node_labels="{'region': 'infra', 'zone': 'default'}"
+master.ls-openshift.com
+node1.ls-openshift.com openshift_node_labels="{'region': 'primary', 'zone': 'east'}"
+node2.ls-openshift.com openshift_node_labels="{'region': 'primary', 'zone': 'west'}"
+infra-node1.ls-openshift.com openshift_node_labels="{'region': 'infra', 'zone': 'default'}"
+infra-node2.ls-openshift.com openshift_node_labels="{'region': 'infra', 'zone': 'default'}"
