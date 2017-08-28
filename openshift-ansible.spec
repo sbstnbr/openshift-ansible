@@ -9,7 +9,7 @@
 %global __requires_exclude ^/usr/bin/ansible-playbook$
 
 Name:           openshift-ansible
-Version:        3.6.173.0.10
+Version:        3.6.173.0.20
 Release:        1%{?dist}
 Summary:        Openshift and Atomic Enterprise Ansible
 License:        ASL 2.0
@@ -280,6 +280,55 @@ Atomic OpenShift Utilities includes
 
 
 %changelog
+* Mon Aug 28 2017 Jenkins CD Merge Bot <smunilla@redhat.com> 3.6.173.0.20-1
+- 
+
+* Sun Aug 27 2017 Scott Dodson <sdodson@redhat.com> 3.6.173.0.19-2
+- Fix scaleup on containerized installations (sdodson@redhat.com)
+
+* Sun Aug 27 2017 Jenkins CD Merge Bot <smunilla@redhat.com> 3.6.173.0.19-1
+- 
+
+* Sat Aug 26 2017 Jenkins CD Merge Bot <smunilla@redhat.com> 3.6.173.0.18-1
+- fix #5206.  Default ES cpu limit (jcantril@redhat.com)
+- remove out of scope variable from exception message
+  (maxamillion@fedoraproject.org)
+- raise AosVersionException if no expected packages found by dnf query
+  (maxamillion@fedoraproject.org)
+- add dnf support to roles/openshift_health_checker/library/aos_version.py
+  (maxamillion@fedoraproject.org)
+
+* Fri Aug 25 2017 Jenkins CD Merge Bot <smunilla@redhat.com> 3.6.173.0.17-1
+- 
+
+* Fri Aug 25 2017 Jenkins CD Merge Bot <smunilla@redhat.com> 3.6.173.0.16-1
+- 
+
+* Thu Aug 24 2017 Jenkins CD Merge Bot <smunilla@redhat.com> 3.6.173.0.15-1
+- 
+
+* Thu Aug 24 2017 Jenkins CD Merge Bot <smunilla@redhat.com> 3.6.173.0.14-1
+- 
+
+* Thu Aug 24 2017 Scott Dodson <sdodson@redhat.com> 3.6.173.0.13-2
+- Add dotnet 2.0 to v3.6 (sdodson@redhat.com)
+- Update v3.6 content (sdodson@redhat.com)
+- Backport to 3.6 - Bug 1468987: kibana_proxy OOM (jwozniak@redhat.com)
+- Passing memory and cpu limit for ops ES install (ewolinet@redhat.com)
+
+* Thu Aug 24 2017 Jenkins CD Merge Bot <smunilla@redhat.com> 3.6.173.0.13-1
+- If IP4_NAMESERVERS are unset then pull the value from /etc/resolv.conf
+  (sdodson@redhat.com)
+
+* Wed Aug 23 2017 Jenkins CD Merge Bot <smunilla@redhat.com> 3.6.173.0.12-1
+- 
+
+* Wed Aug 23 2017 Jenkins CD Merge Bot <smunilla@redhat.com> 3.6.173.0.11-1
+- Switch to migrating one host and forming a new cluster (sdodson@redhat.com)
+- Update etcd scaleup entrypoint includes and use etcd_{hostname,ip} facts for
+  new member registration. (abutcher@redhat.com)
+- add etcd scaleup playbook (jawed.khelil@amadeus.com)
+
 * Wed Aug 23 2017 Jenkins CD Merge Bot <smunilla@redhat.com> 3.6.173.0.10-1
 - 
 
