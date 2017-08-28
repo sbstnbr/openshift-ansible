@@ -1,4 +1,12 @@
 ---
+- name: Install NetworkManager service
+  yum: name=NetworkManager state=latest
+
+- name: Start NetworkManager
+  service:
+    name: NetworkManager
+    state: started
+
 - name: Check for NetworkManager service
   command: >
     systemctl show NetworkManager
