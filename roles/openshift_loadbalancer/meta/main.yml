@@ -16,7 +16,7 @@ dependencies:
   - service: haproxy stats
     port: "9000/tcp"
   - service: haproxy balance
-    port: "{{ openshift_master_api_port | default(8443) }}/tcp"
+    port: "{{ openshift_master_api_port | default(443) }}/tcp"
 - role: os_firewall
   os_firewall_allow:
   - service: nuage mon
